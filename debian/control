@@ -1,0 +1,17 @@
+Source: codri-archive-keyring
+Section: utils
+Priority: extra
+Maintainer: Tim Besard <tim.besard@gmail.com>
+Uploaders: Tim Besard <tim.besard@gmail.com>
+Build-Depends: cdbs, debhelper (>= 5), po-debconf
+Build-Depends-Indep: gnupg
+Standards-Version: 3.8.3
+Homepage: http://www.codri.be
+
+Package: codri-archive-keyring
+Architecture: all
+Depends: ${misc:Depends}, apt, gnupg
+Description: GnuPG archive keys for the Codri repository
+ Codri digitally signs its Release files. This package
+ contains the archive key used by the Codri repository.
+
